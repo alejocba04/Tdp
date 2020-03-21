@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>TDP</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <style>
+        img {
+            height: 150px;
+        }
+
+        .boxed {
+            padding: 20px;
+            border: 2px solid red;
+            margin: 10px;
+        }
+
+        h6{
+            color: white;
+            background-color: red;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+                <hr />
+
+                <button type="button" onclick="Change()">CHANGE TO ENGLISH</button>
+
+                <hr />
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ label</h6>
+                        <label data-tdp="Hello world">Hola mundo</label>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ h1</h6>
+                        <h1 data-tdp="Hello <span class='text-danger'>world</span>">Hola <span class='text-danger'>mundo</span></h1>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ p</h6>
+                        <p data-tdp="Hello world">Hola mundo</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ span</h6>
+                        <span data-tdp="Hello world">Hola mundo</span>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ input</h6>
+                        <input class="form-control" placeholder="Hola mundo" data-tdp="Hello world" />
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ textarea</h6>
+                        <textarea class="form-control" placeholder="Hola mundo" data-tdp="Hello world"></textarea>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ select</h6>
+                        <select class="form-control">
+                            <option selected data-tdp="Hello world">Hola mundo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ li</h6>
+                        <ul>
+                            <li data-tdp="Hello world">Hola mundo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ img</h6>
+                        <img src="./assets/holamundo.png" data-tdp="./assets/helloworld.png" />
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ button</h6>
+                        <button class="btn btn-success" data-tdp="Hello world">Hola mundo</button>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="boxed">
+                        <h6>+ a</h6>
+                        <a class="btn btn-success" href="holamundo.com" data-tdp="helloworkd.com" target="_blank"><span data-tdp="Hello world href=helloworkd.com">Hola mundo href=holamundo.com</span></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="./dist/tdp.js"></script>
+
+    <script>
+
+        var original = "es";
+        var other = "en";
+
+        function Change() {
+            initTdp(original, other);
+        }
+
+    </script>
+
+</body>
+</html>
