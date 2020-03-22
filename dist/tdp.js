@@ -1,4 +1,4 @@
-// JavaScript source code
+// JavaScript source code Alejandro Guzman
 
 var initTdp = function (tdp_default, tdp_cultura) {
 
