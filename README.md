@@ -10,6 +10,10 @@ Its works whit any kind of html element like:
 
 > The idea of this project its make an easy way to translate an entire website, view, partialview, etc.
 
+### Example
+
+[Codepen example](https://codepen.io/alejocba04-the-bashful/pen/RwPYVOQ)
+
 ### Installation
 
 Add references to the tdp.js file
